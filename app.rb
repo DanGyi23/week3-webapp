@@ -18,7 +18,6 @@ get '/random_britney' do
 end
 
 get '/named_britney' do
-  p params
   @name = params[:name] 
   erb(:index)
 end
