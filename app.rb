@@ -13,5 +13,6 @@ get '/dan/smells' do
 end
 
 get '/cat' do
+  @random_noise = ['MEOW!!!','WOOF!!!','HOWL!!!'].sample 
   erb(:index)
 end
