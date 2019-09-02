@@ -12,7 +12,13 @@ get '/dan/smells' do
   "SMELLY"
 end
 
-get '/cat' do
-  @random_noise = ['MEOW!!!','WOOF!!!','HOWL!!!'].sample 
+get '/random_britney' do
+  @name = ['MEOW!!!','WOOF!!!','HOWL!!!'].sample 
+  erb(:index)
+end
+
+get '/named_britney' do
+  p params
+  @name = params[:name] 
   erb(:index)
 end
