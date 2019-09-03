@@ -5,4 +5,6 @@ ruby '2.6.3'
 group :development, :test do
   gem 'sinatra'
   gem 'shotgun'
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
